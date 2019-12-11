@@ -7,7 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="AGUJAR_ALUMNI_style2.css">
 	<title>WELCOME</title>
 </head>
-<body>
+<body onload="getCurrentUser()">
 	<img src="SCHOOL_LOGO.png" class="uic_school_logo">
 	<nav class="navigator">
 		<ul>
@@ -16,10 +16,41 @@
 			<li><a href="">COMMUNITY EXTENSION</a></li>
 			<li><a href="">RESOURCES & STUDENT SERVICES</a></li>
 			<li ><input class="search" type="text" placeholder="Search"></li>
-			<li class="account"><a href="" >Hi <span id="result"></span></a></li>
+			<li class="account" id="welcome">Hi username1</li>
 		</ul>
 	</nav>
+	
+	<div class="container">
+		<div class="col1">
+			<img class="centerBg" src="bg.png" >
+			<div class="centerTxt1">
+				<p class="welcome">WELCOME</p>
+			</div>
+			<div class="centerTxt2">
+				<p class="to">TO</p>
+			</div>
+			<div class="centerTxt3">
+				<p class="IC">UNIVERSITY OF IMMACULATE <br> CONCEPTION</p>
+			</div>
+			
+		</div>
 
-	<script type="text/javascript" src="AGUJAR_ALUMNI_script.javascript"></script>
+		<div class="col2">
+			<div class="box">
+				<p class="boldTxt">CAREER ADVICES <br> FROM ALUMNI</p>
+				<p class="unboldTxt">for more info</p>
+				<button class="button">click here</button>
+				<hr>
+				<p class="boldTxt">ONLINE TUTORIAL <br> SESSION</p>
+				<p class="unboldTxt">for more info</p>
+				<button class="button">click here</button>
+
+			</div>
+		</div>
+	</div>
+    
+    <span id="welcome1"></span>
+
+    <script type="text/javascript" src="AGUJAR_ALUMNI_script.js"></script>
 </body>
 </html>
